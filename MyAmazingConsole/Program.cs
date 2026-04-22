@@ -1,7 +1,3 @@
-﻿using System.Security.Cryptography;
-
-var des = new DESCryptoServiceProvider(); // 🔥 Weak algorithm
-des.GenerateKey();
-des.GenerateIV();
-
-Console.WriteLine("Hello, World!");
+﻿
+// write the application banner on the screen
+Console.WriteLine("Welcome to My Amazing Console Application!");
