@@ -54,3 +54,5 @@ repository.Delete(bobOrder.Id);
 Console.WriteLine($"\nDeleted Bob's order. Repository now contains {repository.GetAll().Count} order(s).");
 
 Console.WriteLine("\nDone.");
+
+var sqlConnectionString="Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;";
