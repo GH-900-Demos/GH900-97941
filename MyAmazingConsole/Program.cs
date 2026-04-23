@@ -55,4 +55,4 @@ Console.WriteLine($"\nDeleted Bob's order. Repository now contains {repository.G
 
 Console.WriteLine("\nDone.");
 
-var sqlConnectionString="Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;";
+var sqlConnectionString="";
