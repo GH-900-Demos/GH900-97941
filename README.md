@@ -21,23 +21,40 @@ The goal of this project is to demonstrate:
 
 ## Project Structure
 
-```
-GH900-97941/
-├── MyAmazingApp.slnx                  # Solution file
-│
-├── MyAmazingConsole/                  # Main console application
-│   ├── Program.cs                     # Application entry point
-│   ├── Models/
-│   │   ├── Customer.cs                # Customer entity
-│   │   ├── Order.cs                   # Order aggregate (contains OrderItems)
-│   │   ├── OrderItem.cs               # Single line-item within an Order
-│   │   └── OrderStatus.cs             # Enum: Created | Completed | Shipped | Closed
-│   └── Repositories/
-│       ├── IOrderRepository.cs        # Repository contract (interface)
-│       └── InMemoryOrderRepository.cs # In-memory implementation
-│
-└── MyAmazingConsole.Tests/            # xUnit test project
-    └── UnitTest1.cs                   # Unit tests for OrderItem validation
+```marmaid
+graph TD
+    root["GH900-97941/"]
+    slnx["MyAmazingApp.slnx"]
+    console["MyAmazingConsole/"]
+    program["Program.cs"]
+    models["Models/"]
+    customer["Customer.cs"]
+    order["Order.cs"]
+    orderitem["OrderItem.cs"]
+    orderstatus["OrderStatus.cs"]
+    repos["Repositories/"]
+    iorderrepo["IOrderRepository.cs"]
+    inmemrepo["InMemoryOrderRepository.cs"]
+    tests["MyAmazingConsole.Tests/"]
+    unittest["UnitTest1.cs"]
+
+    root --> slnx
+    root --> console
+    root --> tests
+
+    console --> program
+    console --> models
+    console --> repos
+
+    models --> customer
+    models --> order
+    models --> orderitem
+    models --> orderstatus
+
+    repos --> iorderrepo
+    repos --> inmemrepo
+
+    tests --> unittest
 ```
 
 ---
