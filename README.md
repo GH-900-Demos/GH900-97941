@@ -21,7 +21,7 @@ The goal of this project is to demonstrate:
 
 ## Project Structure
 
-```marmaid
+```mermaid
 graph TD
     root["GH900-97941/"]
     slnx["MyAmazingApp.slnx"]
